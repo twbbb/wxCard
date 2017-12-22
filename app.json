@@ -1,5 +1,5 @@
 {
-  "pages": [
+  "pages": [   
     "pages/mycard/mycard",
     "pages/cardcase/cardcase",
     "pages/me/me",
@@ -10,7 +10,8 @@
     "pages/about/about",
     "pages/setting/setting",
     "pages/visitor/visitor",
-    "pages/track/track"
+    "pages/track/track",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "dark",

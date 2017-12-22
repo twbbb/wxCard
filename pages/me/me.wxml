@@ -33,6 +33,11 @@
     </view>
   </view>
   <view class="item-group">
+   <navigator class="item" url="../test/test">
+      <view>
+        <text class="iconfont icon-zuji"></text> 测试123
+      </view>
+    </navigator>
     <navigator class="item" url="../track/track">
       <view>
         <text class="iconfont icon-zuji"></text> 足迹

@@ -46,24 +46,26 @@ Page({
     //获取我的名片数据
     var that = this
     app.getData(that.data.cardDataUrl, function (res) {
-      if (res.data.length == 0) {
+      if (1==1) 
+      // if (res.data.length == 0) 
+      {
         that.setData({
           isslide: true
         })
-        // wx.showModal({
-        //   title: '请创建名片',
-        //   showCancel: false,
-        //   content: '至少创建一张名片才能正常使用哦~',
-        //   success: function (res) {
-        //     if (res.confirm) {
-        //       wx.navigateTo({
-        //         url: '../createcard/createcard?id=0'
-        //       })
-        //     } else if (res.cancel) {
-        //       console.log('用户点击取消')
-        //     }
-        //   }
-        // }) 
+        wx.showModal({
+          title: '请创建名片',
+          showCancel: false,
+          content: '至少创建一张名片才能正常使用哦~',
+          success: function (res) {
+            if (res.confirm) {
+              wx.navigateTo({
+                url: '../createcard/createcard?id=0'
+              })
+            } else if (res.cancel) {
+              console.log('用户点击取消')
+            }
+          }
+        }) 
       }
       that.setData({
         cardData: res.data,
